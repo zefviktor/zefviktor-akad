@@ -1,0 +1,9 @@
+#MyProject & Gulp #
+############
+node_modules/
+package-lock.json
+#gulpfile.js
+#package.json
+#assets
+
+

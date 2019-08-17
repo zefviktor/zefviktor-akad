@@ -1,0 +1,91 @@
+html
+  scroll-behavior: smooth
+main
+  background-color: $background__first
+
+a:active,
+a:visited,
+a:hover
+  text-decoration: none
+
+a,
+button,
+input
+  cursor: pointer
+  outline: none
+  text-decoration: none
+button
+  border-radius: 0
+button:active,
+button:focus
+  outline: none
+
+
+
+.main
+  padding-bottom: 20px
+  &__carousel
+    position: absolute
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 15
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-pack: center
+    justify-content: center
+    padding-left: 0
+    list-style: none
+    &-item
+      box-sizing: content-box
+      -ms-flex: 0 1 auto
+      flex: 0 1 auto
+      width: 30px
+      height: 6px
+      margin-right: 3px
+      margin-left: 3px
+      text-indent: -999px
+      cursor: pointer
+      background-color: #60606e
+      background-clip: padding-box
+      border-top: 10px solid transparent
+      border-bottom: 10px solid transparent
+      transition: opacity 0.6s ease
+      opacity: 0.5
+    .active
+      opacity: 1
+
+
+
+
+  &__block
+    &-title
+      padding-bottom: 30px
+      display: flex
+      flex-direction: column
+      color: #fe504f
+      font-family: $font-family__first
+      font-size: 20px
+      font-weight: 700
+      text-transform: uppercase
+      position: relative
+      &:after
+        content: ''
+        width: 50px
+        height: 15px
+        border-bottom: 3px solid #fe504f
+    &-text
+      &-light
+        color: #ffffff
+        font-family: $font-family__first
+        font-size: 14px
+        font-weight: 400
+        line-height: 24px
+      &-dark
+        color: #000000
+        font-family: $font-family__first
+        font-size: 14px
+        font-weight: 400
+        line-height: 24px
+
+

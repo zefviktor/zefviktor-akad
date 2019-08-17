@@ -1,0 +1,35 @@
+.nav
+  display: flex
+  &__menu
+    display: flex
+  &__menu li
+    padding: 0 10px
+    display: flex
+    align-items: center
+    &:before
+      content: ""
+    @media (min-width: 992px)
+      &:before
+        content: "-"
+        padding-right: 15px
+        color: #9a9a9a
+        font-family: $font-family__second
+        font-size: 14px
+        font-weight: 400
+        line-height: 48px
+        text-transform: uppercase
+      &:first-child
+        &:before
+          content: ""
+    a
+      color: #9a9a9a
+      font-family: $font-family__second
+      font-size: 14px
+      font-weight: 400
+      line-height: 48px
+      text-transform: uppercase
+
+
+
+
+

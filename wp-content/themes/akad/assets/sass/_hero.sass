@@ -1,0 +1,114 @@
+.hero
+  &__background
+    padding-bottom: 100px
+    &-home
+      padding-top: 400px
+      background: linear-gradient( rgba(255,255,255,0.85), rgba(255,255,255,0.85) ), url("../img/bg_header_home.jpg") center / cover no-repeat
+      @media (min-width: 576px)
+        padding-top: 225px
+    &-about
+      padding-top: 400px
+      background:  linear-gradient( rgba(145, 145, 162, 0.2), rgba(145, 145, 162, 0.2)), url("../img/bg_header.jpg") center / cover no-repeat
+      @media (min-width: 576px)
+        padding-top: 225px
+    &-blog
+      padding-top: 400px
+      background: linear-gradient( rgba(96,96,110,0.1), rgba(96,96,110,0.1) ), url("../img/bg_header.jpg") center / cover no-repeat
+      @media (min-width: 576px)
+        padding-top: 225px
+  &__new-page
+    padding-top: 60px
+    padding-bottom: 160px
+    display: flex
+    justify-content: center
+    &-title
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+  &__content
+    width: 100%
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-bottom: 20px
+    position: static
+    @media (min-width: 1200px)
+      position: relative
+      padding-bottom: 350px
+
+    &-one
+      margin: 0 auto
+      width: 50%
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      &-button
+        padding: 10px 20px
+        background-color: #7beec7
+        color: #60606e
+        font-family: $font-family__first
+        font-size: 18px
+        font-weight: 700
+        text-transform: uppercase
+      &-title
+        border: 10px solid #60606e
+        &-style
+          padding: 20px 35px
+          text-align: center
+      &-text
+        padding-top: 30px
+        text-align: center
+    &-two
+      padding-top: 20px
+      width: 100%
+      display: flex
+      justify-content: center
+      position: relative
+      flex-direction: column
+      @media (min-width: 1200px)
+        position: absolute
+        flex-direction: row
+      &-title
+        width: 100%
+        bottom: 0
+        text-align: center
+        @media (min-width: 1200px)
+          text-align: start
+        //&-icon
+        //  background: url("../img/icon_hero.jpg") center / cover no-repeat
+        //  width: 458px
+        //  height: 398px
+
+      &-item
+        width: 100%
+        padding-left: 5%
+        padding-top: 5%
+        display: flex
+        flex-direction: column
+        justify-content: end
+        align-items: start
+        &-text
+          padding-top: 28px
+          padding-bottom: 58px
+        &-button
+          height: 27%
+          position: relative
+          @media (min-width: 1200px)
+            position: absolute
+            bottom: -10px
+            left: 80%
+
+
+
+
+
+
+
+
+
+
+
+
+
